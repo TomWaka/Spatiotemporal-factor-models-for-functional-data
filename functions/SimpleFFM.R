@@ -1,3 +1,12 @@
+#' Fit Spatiotemporal Factor Model
+#'
+#' @param Y Observed data tensor (N × T × K)
+#' @param Ws List of spatial weight matrices
+#' @param M Number of factors
+#' @param mc Number of MCMC iterations
+#' @param bn Burn-in period
+#' @param cores Number of cores for parallel processing
+#' @return List containing model results
 
 FFM <- function(Y, Ws, M, mc, bn) {
   
